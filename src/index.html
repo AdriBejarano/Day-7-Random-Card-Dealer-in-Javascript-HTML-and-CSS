@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--generacion de las cartas aleatoriamente-->
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="card">
+      <div class="top">
+        <!-- <i class="fas fa-heart"></i> -->
+        &hearts;
+      </div>
+      <div class="body" id="number">
+        8
+      </div>
+      <div class="bottom">
+        &hearts;
       </div>
     </div>
+
+    <!-- ♥ – type &hearts; into your HTML document. Make sure to start with an ampersand, finish with a semi-colon, and use no spaces between the ampersand and semi-colon
+    ♦ – type &diams; into your HTML document
+    ♠ – type &spades; into your HTML document
+    ♣ – type &clubs; into your HTML document    -->
+
+    <script src="../src/index.js"></script>
   </body>
 </html>
